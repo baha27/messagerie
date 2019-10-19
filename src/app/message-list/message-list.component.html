@@ -1,0 +1,4 @@
+<div [hidden]="!service.isLogged()">
+  <app-instant-message  *ngFor="let message of service.getMessages()" 
+                [message]="message"></app-instant-message>
+</div>
